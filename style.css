@@ -1,0 +1,84 @@
+/* =====    GENERAL STYLES  ===== */
+* {
+    margin: 0;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.container {
+    width: min(800px, 85vw);
+    margin-inline: auto;
+}
+
+body {
+    background-color: #09090A;
+    color: #A1A1AA;
+    font-family: 'Roboto Mono', monospace;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 48px;
+}
+
+header .container button {
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid #8B5CF6;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 52px;
+    padding: 16px 24px;
+}
+
+main .container {
+    display: flex;
+    gap: 32px;
+}
+
+main .container .habits {
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+main .container .habits .habit {
+    font-size: 24px;
+}
+
+main .container .days {
+    display: flex;
+    gap: 48px;
+}
+
+main .container .days .day {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+main .container .days .day p {
+    font-size: 20px;
+}
+
+main .container .days .day input {
+    appearance: none;
+    background-color: #18181B;
+    width: 64px;
+    height: 64px;
+    border: 2px solid #27272A;
+    border-radius: 8px;
+}
+
+main .container .days .day input:checked {
+    background-color: #8B5CF6 ;
+    border-color: #A78BFA;
+}
