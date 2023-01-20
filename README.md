@@ -1,0 +1,2 @@
+# habits
+NLW Setup - Rocketseat
