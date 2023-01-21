@@ -14,14 +14,22 @@ body {
     background-color: #09090A;
     color: #A1A1AA;
     font-family: 'Roboto Mono', monospace;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #09090A;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 100px;
-    margin-bottom: 48px;
+    padding-top: 100px;
+    padding-bottom: 48px;
 }
 
 header .container button {
@@ -38,38 +46,46 @@ header .container button {
     padding: 16px 24px;
 }
 
-main .container {
-    display: flex;
-    gap: 32px;
+main {
+    padding-top: 232px;
+    padding-bottom: 48px;
 }
 
-main .container .habits {
-    margin-top: 65px;
+main .container #form-habits {
+    display: flex;
+    gap: 32px;
+    padding-right: 7.5vw;
+    width: fit-content;
+}
+
+main .container #form-habits .habits {
+    margin-top: 45px;
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
-main .container .habits .habit {
-    font-size: 24px;
+main .container #form-habits .habits .habit {
+    font-size: 32px;
+    line-height: 64px;
 }
 
-main .container .days {
+main .container #form-habits .days {
     display: flex;
     gap: 48px;
 }
 
-main .container .days .day {
+main .container #form-habits .days .day {
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
-main .container .days .day p {
+main .container #form-habits .days .day p {
     font-size: 20px;
 }
 
-main .container .days .day input {
+main .container #form-habits .days .day input {
     appearance: none;
     background-color: #18181B;
     width: 64px;
@@ -78,7 +94,13 @@ main .container .days .day input {
     border-radius: 8px;
 }
 
-main .container .days .day input:checked {
-    background-color: #8B5CF6 ;
+main .container #form-habits .days .day input:checked {
+    background-color: #8B5CF6;
     border-color: #A78BFA;
+}
+
+@media (max-width: 570px) {
+    header .container button span {
+        display: none;
+    }
 }
